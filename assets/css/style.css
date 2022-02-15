@@ -1,0 +1,81 @@
+/* ==== BROWSER RESETS  ==== */
+* { box-sizing: border-box; padding: 0; margin: 0 }
+body, html { height: 100% }
+body { max-width: 1600px; margin: 0 auto}
+
+
+/* ==== UTILITY CLASS  ==== */
+.img-fluid { width: 100%; height: auto }
+
+
+
+/* ==== FONT  ==== */
+body { font-family: sans-serif }
+/* ========================== PAGE WRAPPER  ============================== */
+
+.page-wrapper h1, .page-wrapper h2, .page-wrapper h3 { line-height: 1.2; font-weight: bold }
+
+.page-wrapper h1 { font-size: calc(30px + (64 - 30) * ((100vw - 320px)/(1600 - 320))) }
+.page-wrapper h2 { font-size: calc(22px + (36 - 22) * ((100vw - 320px)/(1600 - 320))); color: #000 }
+.page-wrapper h3 { font-size: calc(18px + (24 - 18) * ((100vw - 320px)/(1600 - 320))); color: #000 }
+
+.page-wrapper p, 
+.page-wrapper li { font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320))); line-height: 1.6  }
+.page-wrapper li { margin-left: 17px }
+
+.page-wrapper a.fancy-link:link, 
+.page-wrapper a.fancy-link:visited {
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: solid 2px blue;
+	color:blue;
+}
+
+.page-wrapper a.fancy-link:hover, 
+.page-wrapper a.fancy-link:active {
+	text-decoration: none;
+	border-bottom: none
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+	.page-wrapper { 
+		width: 60%; 
+		margin-left: auto; 
+		margin-right: auto; 
+		padding-top: 100px
+	}
+	.page-wrapper h1 { margin: 0 0 5% 0 }
+	.page-wrapper h2 { margin: 5% 0 1% 0 }
+	.page-wrapper h3 { margin: 4% 0 0 0 }
+	.page-wrapper p, 
+	.page-wrapper ul li { margin-bottom: 20px }
+	.page-wrapper img { 
+		display: block; 
+		margin-bottom: 20px
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:767px) {
+	.page-wrapper { 
+		width: 80%; 
+		margin-left: auto; 
+		margin-right: auto;
+		padding-top: 80px
+	}
+	.page-wrapper h1 { margin: 0 0 5% 0 }
+	.page-wrapper h2 { margin: 12% 0 1% 0 }
+	.page-wrapper h3 { margin: 8% 0 0 0 }
+	.page-wrapper p, 
+	.page-wrapper ul li { margin-bottom: 14px }
+	.page-wrapper img { 
+		display: block; 
+		margin-bottom: 14px
+	}
+}
+
+
+
+
+
